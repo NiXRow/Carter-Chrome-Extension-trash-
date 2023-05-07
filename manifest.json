@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Carter Chatbot Extension",
+  "version": "1.0",
+  "description": "A Chrome extension that uses the Carter API to make a chatbot interface",
+  "icons": {
+    "16": "images/c_16.png",
+    "32": "images/c_32.png",
+    "48": "images/c_48.png",
+    "128": "images/c_128.png"
+  },
+  "permissions": ["activeTab"],
+  "action": {
+    "default_icon": {
+      "16": "images/c_16.png",
+      "32": "images/c_32.png",
+      "48": "images/c_48.png",
+      "128": "images/c_128.png"
+    },
+    "default_popup": "popup.html"
+  }
+}

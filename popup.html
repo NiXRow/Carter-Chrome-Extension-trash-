@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="sub-btn.css">
+  </head>
+  <body>
+    <div class="top-cont">
+
+
+      <a href="https://www.carterlabs.ai/" target="_blank"><img src="https://chat.carterlabs.ai/assets/logo-w-292e4c56.svg" class="chat-logo" alt="logo">
+      </a>
+    
+      <!-- Button to toggle API input section -->
+      <button id="toggle-api-btn" class="btn btn-primary" style="position: absolute; top: 10px; right: 10px;">
+        <img src="images\icons8-settings-32.png" id="cogimg">
+      </button>
+
+
+    </div>
+    <div class="container">
+    
+      <!-- Chat input section container -->
+      <div id="chat-container">
+        <div id="output" class="main-out">
+        </div>
+    
+        <!-- Chat input section -->
+        <div class="sticky-bottom">
+          <div class="row">
+            <div class="col-md-12">
+              <form>
+                <div class="form-group">
+                  <div class="input-container">
+                    <div id="typing">
+                      <!-- <p
+                        style="
+                          font-size: 12px;
+                          display: inline;
+                          margin-left: 10px;
+                        "
+                        id="type-indicator"
+                      > -->
+                      </p>
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                    </div>
+                    <input
+                      type="text"
+                      id="message-input"
+                      name="message"
+                      class="form-control"
+                      placeholder="Say something..."
+                    />
+                  </div>
+                  <p class="carter-creds">Made with <a href="https://www.carterlabs.ai/" target="_blank">Carter</a></p>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-3 justify-content-end align-items-end">
+              <!-- <button type="submit" class="btn btn-primary">
+                <ion-icon name="send"></ion-icon>
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  <!-- API input section container -->
+  <div id="api-container" style="display: none;">
+    <form id="api-form" class="sticky-bottom">
+      <div class="form-group">
+        <label for="api-input">Enter details (only do this once)</label>
+        <input type="text" id="api-input" name="api-url" placeholder="Carter API">
+        <br>
+        <input type="text" id="agent-input" name="agent-url" placeholder="Agent Name">
+        <br>
+        <input type="text" id="playerId-input" name="playerId-url" placeholder="Player ID">
+      </div>
+      <div class="btn-cont"><button type="submit" class="btn btn-primary sub-btn" id="sub-main-btn">Submit</button></div>
+      <p></p>
+    </form>
+  </div>
+
+  <div class="overlay"></div>
+
+  <div class="wrapper" id="wrapper-main">
+    <header><p id="Uread">CONFIGURE API</p></header>
+    <hr>
+    <div class="content">
+      <p>Please change the API settings</p>
+      <button class="btn-close" id="btn-close-main">Close</button>
+    </div>
+  </div>
+  </body>
+</html>
+
+<script src="popup.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="sub-btn.js"></script>
