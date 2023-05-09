@@ -59,6 +59,7 @@ body {
   margin: 0 auto;
   top: 0;
   display: block;
+  padding-left: 15px;
 }
 
 @keyframes fade-in-logo {
